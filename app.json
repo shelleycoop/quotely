@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Quotely",
+    "slug": "quotely",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "quotely",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#12100E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.quotely.app"
+    },
+    "android": {
+      "package": "com.quotely.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#1C1915",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": true,
+      "permissions": ["POST_NOTIFICATIONS"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#12100E",
+          "image": "./assets/splash-icon.png"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#C45C26",
+          "defaultChannel": "daily-quotes"
+        }
+      ]
+    ]
+  }
+}
